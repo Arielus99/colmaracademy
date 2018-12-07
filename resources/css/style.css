@@ -1,0 +1,443 @@
+html {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 3rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: darkslategray;
+  line-height: 3.5rem;
+}
+
+p {
+  color: darkslategray;
+
+}
+
+
+/* Header style */
+
+.header {
+  width: 100%;
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 24px;
+}
+
+.imglogo {
+  height: 32px;
+}
+
+.imglogo.hidden {
+  display: none;
+}
+
+.colmar {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.09rem;
+}
+
+.academy {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.09rem;
+}
+
+.menucontainer {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 24px;
+}
+
+.menu li {
+  display: inline-block;
+  padding-left: 16px;
+}
+
+    /* >>>>>> Header Media 470px secreens  */
+    @media only screen and (max-width: 470px) {
+      .colmar, .academy, .menucontainer {
+        display: none;
+      }
+      .logo {
+        width: 100%;
+        justify-content: space-around;
+      }
+      .imglogo.hidden {
+        display: inline-block;
+      }
+    }
+
+/* Section 1 Learn  */
+
+.section1 {
+  background-color: lightgrey;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.section1 .image {
+  width: 60%;
+}
+
+.image img {
+  width: 100%;
+}
+
+.learn {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.learnh {
+  margin-left: 1.5rem;
+  color: #4a4a4a;
+  margin-top: 2rem;
+}
+
+.learnh.button {
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.button  {
+  width: 25rem;
+  height: 3.125rem;
+  border-radius: 1px;
+  background-color: #4a4a4a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button a {
+  color: white;
+}
+
+    /* >>>>>> Section1 Media 470px secreens  */
+    @media only screen and (max-width: 470px) {
+      .section1 {
+        padding: 0;
+        flex-direction: column;
+      }
+
+      .section1 .image {
+        width: 100%;
+      }
+
+      .learn {
+        width: 100%;
+        align-items: center;
+        margin: 1rem 1rem;
+      }
+
+      .learnh {
+        text-align: center;
+      }
+
+      .learn h1 {
+        font-size: 1.8rem;
+      }
+      .learn h2 {
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+
+      }
+    }
+
+/* <!-- Section 2 - It doesn't hurt  --> */
+
+.section2 {
+  width: 100%;
+  display: flex;
+  border-bottom: 1px solid lightgrey;
+
+}
+
+.column1 {
+  width: 60%;
+  background-color: white;
+  /* padding: 24px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.image2 {
+  max-width: 96%;
+  height: auto;
+}
+
+.column1info h1 {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  color: darkslategray;
+}
+
+.column1info p {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  color: darkslategray;
+  line-height: 1.5rem;
+}
+
+.column1info span {
+  color: darkslategray;
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
+    /* >>>>>> Section2 Media 470px secreens  */
+    @media only screen and (max-width: 470px) {
+      .column1.hidden {
+        display: none;
+      }
+
+    }
+
+
+/* <!-- Section 3 - Cards --> */
+
+
+.column2 {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid lightgrey;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  border-top: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
+  padding: 1rem 1rem;
+  margin-top: 0.05rem;
+  margin-bottom: 0.05rem;
+  transition: background-color 300ms ease-in 100ms;
+}
+
+.cardimg {
+  width: 35%;
+  height: auto;
+}
+
+.cardimg img {
+  width: 100%;
+  height: auto;
+}
+
+#mobile {
+  display: none;
+}
+
+.cardinfo {
+  padding-left: 1rem;
+  width: 65%;
+  color: darkslategray;
+}
+
+.cardinfo a {
+  line-height: 3rem;
+  color: blue;
+  font-size: 0.9rem;
+}
+
+.cards:hover {
+  background-color: #f2f2f2;
+}
+
+
+    /* >>>>>> Section3 Media 470px secreens  */
+    @media only screen and (max-width: 470px) {
+      .column2 {
+          width: 100%;
+      }
+      .cards {
+        flex-direction: column;
+      }
+
+      .cardimg {
+        width: 100%;
+      }
+      #fullscreen {
+        display: none;
+        width: 100%;
+      }
+      #mobile {
+        display: block;
+      }
+
+
+    }
+
+
+/* Section 4 - Start Learning Cards  */
+/* Note: create animation for buttons if enough time left */
+
+.thesis {
+  width: 100%;
+  text-align: center;
+  padding-top: 2rem;
+  border-top: 1px solid lightgrey;
+
+}
+
+.cards-start-main {
+  width: 100%;
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cards-start-centre {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.cards-start {
+  background-color: white;
+  margin: 1rem 1rem;
+  width: 20rem;
+}
+
+.cards-start img {
+  width: 100%;
+}
+
+#cards-title {
+  width: 100%;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.cards-start-info {
+  padding: 1.2rem 1.2rem;
+}
+
+.cards-start-info p {
+  line-height: 1.5rem;
+}
+
+.courses {
+  text-transform: uppercase;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+#column2orientation {
+  margin-top: 2rem;
+}
+
+/* Section 4  */
+
+.videocontainer {
+	position: relative;
+  width: 100%;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+  z-index: 10;
+  /* background-color: red; */
+}
+.videocontainer iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+  z-index: 10;
+
+}
+
+    /* >>>>>> Section4 Media 470px secreens  */
+    @media only screen and (max-width: 470px) {
+      .cards-start-main {
+        background-color: white;
+      }
+      .cards-start {
+      }
+      .cards-start-info {
+        background-color: #f2f2f2;
+        transition: background-color 300ms ease-in 100ms;
+      }
+      .cards-start img, p {
+        display: none;
+      }
+      .cards-start-info:hover {
+        background-color: #808080;
+      }
+      #column2orientation {
+        display: none;
+      }
+      .column1 {
+        width: 100%;
+      }
+      .column1info p {
+        display: block;
+      }
+    }
+
+/* Footer code  */
+
+footer {
+  height: 3rem;
+  margin: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  color: 	#909090;
+  font-size: 0.9rem;
+}
+
+footer li{
+  display: inline-block;
+  padding-left: 1rem;
+}
+
+footer a {
+  color: 	#909090;
+  font-size: 0.9rem;
+}
